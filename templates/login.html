@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/static/css/registro_login.css" />
+    <link rel="shortcut icon" href="/static/images/loguito.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+      <img src="/static/Images/logo.png" />
+    </header>
+    <hr>
+    <nav>
+      <ul>
+        <button class="buttonNav"><a href="/inicio">INICIO</a></button>
+        <button class="buttonNav"><a href="/ayudaUsuario">AYUDA</a></button>
+      </ul>
+   </nav> 
+    <div class="fondo">
+      <section class="login">
+        <h1>INCIO DE SESIÓN</h1>
+        <h3>¡Te brindaremos una gran atención!</h3>
+        <h3>Date cuenta de lo que hay</h3>
+        <div class="vertical-line"></div>
+        <form id="loginform" action="/login" method='POST'>
+          <input class="contenedor2" type="text" name="usuario" id="usuario" placeholder="Documento" required>
+          <br>
+          <input class="contenedor2" type="password" name="password" id="Contraseña" placeholder="Password" required>
+          <br>
+          <input type="radio" name="radio" id="acepto" required>
+          <label for="internet">Terminos y condiciones</label>
+          <br>
+          <button class="inicio" type="submit" title="inicio" name="inicio">Iniciar Sesión</button>
+        </form>
+          <br>
+          <a class="buttonRegistro" href="/registro">Registrarse</a>
+     
+      </section>
+    </div>
+    <footer>
+      <div class="columnas">
+        <p>
+          Contactenos <br><br>
+          <img class="iconos2" src="/static/images/telefono.png">&nbsp;&nbsp;3227152395<br><img class="iconos3" src="/static/images/email.png">&nbsp;&nbsp;MercaExtra@gmail.com
+        </p>
+        <p>
+          Metodos de Pago<br><br>
+          <img src="/static/images/Usuario.png">&nbsp;<img class="icono" src="/static/images/paypal.png">
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

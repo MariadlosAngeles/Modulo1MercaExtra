@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/css/perfil.css">
+    <link rel="shortcut icon" href="/static/images/loguito.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+</head>
+<body>
+    <header> 
+        <img src="/static/Images/logo.png">
+    </header>
+    <hr>
+  <div class="textMenu">
+  <nav>
+    <ul>
+      <button class="buttonNav"><a href="/login2">INICIO</a></button>
+      <button class="buttonNav"><a href="/ayudaUsuario">AYUDA</a></button>
+    </ul>
+  </nav> 
+  </div>
+  <div class="fondo">
+  <section>
+      <div class="perfil">
+        <h1>TUS DATOS</h1>
+        <br>
+        <table>
+          <tr>
+            {% for titulo in titulos_tabla %}
+            <th>{{titulo}}</th>
+            {%endfor%}
+          </tr>
+          <tr>
+            {% for yo in yoo %}
+            <td>{{yo}}</td>
+            {% endfor %}
+          </tr>
+        </table>
+      </div>
+  </section>
+    <footer>
+        <div class="columnas">
+          <p>
+            Contactenos <br><br>
+            <img class="iconos2" src="/static/images/telefono.png">&nbsp;&nbsp;3227152395<br><img class="iconos3" src="/static/images/email.png">&nbsp;&nbsp;MercaExtra@gmail.com
+          </p>
+          <p>
+            Metodos de Pago<br><br>
+            <img src="/static/images/Usuario.png">&nbsp;<img class="icono" src="/static/images/paypal.png">
+          </p>
+          </p>
+        </div>
+      </footer>
+</body>
+</html>

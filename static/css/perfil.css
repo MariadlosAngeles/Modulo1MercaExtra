@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  /* cabecera */
+
+header img {
+    height: 80px;
+}
+header button {
+    float: right;
+    background: #ffde59;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    font-size: 15px;
+    margin: -38px 13px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    
+}
+nav ul li{
+    display: inline;
+    margin: 2px;
+    
+}
+nav{
+    background-color:#ffde59;
+    text-align: right;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    color:#4d164d;
+    font-family:'Lato', sans-serif ;
+    font-size: 18px;
+    margin: 2px 5px 0px;
+    font-weight:bolder;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+}
+.icono{
+    width: 99px;
+    height: 43px;
+}
+.iconos2{
+    width: 39px;
+    height: 37px;
+}
+.iconos3{
+    width: 48px;
+  height: 32px;
+}
+.buttonNav{
+    color: #9f00fc;
+    background-color: #ffffff;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 1px 7px;
+    border: 0px;
+    margin: 0% 0% 0%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+hr {
+    border-color: black;
+    height: 0px;
+    background-color: black;
+    border-bottom: 1px;
+   
+}
+section button {
+    color: rgb(0, 0, 0);
+    background: #ffde59;
+    padding: 24px;
+    border-radius: 100px;
+    font-size: 15px;
+    margin: 15px;
+    margin-left: 6px;
+    width: 11%;
+    height: 5px;
+    border: none;
+    float:right;
+    font-family: 'Lato', sans-serif;
+    line-height: 5px;
+}
+tr,td{
+	width:95px;
+	height:53px;
+	vertical-align:middle;
+	text-align:center;
+    background-color: white;
+    font-family:  'Lato', sans-serif;
+    font-size: 20px;
+    margin: 20px 0px 0px;
+    padding: 10px 20px 0px 0px;
+    border-radius: 12px;
+}
+
+th{
+    color:#ffffff;
+    background-color: #647EF6;
+    margin: 20px 0px 0px;
+    border-radius: 12px;
+    width:23px;
+    font-size: 25px;
+}
+  /* cuerpo */
+.fondo {
+    background-image: url(https://cdn.pixabay.com/photo/2017/08/09/09/50/shopping-2613984_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px 0px 0px 0px;
+    padding-bottom: 199px;
+    padding-top: 50px;
+    border-bottom: 1px solid black;
+    height: 80vh;
+
+}
+
+section h1{
+    font-size: 43px;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 15px;
+}
+.perfil{
+    width: 911px;
+    height:332px;
+    background: #ded6c9d3;
+    margin:6px auto 16px;
+    padding: 59px 17px;
+    border-radius: 78px;
+}
+.actualizar{
+    color:#4d164d;
+    background-color: #ffffff;
+    border-radius: 14px;
+    font-size: 16px;
+    padding: 10px 16px;
+    border:0px;
+    margin: 10% 31% 0%;
+    font-family: 'Lato', sans-serif;
+    width: 150px;
+    height: 25px;
+    line-height: 5px;
+    font-weight: bolder;
+}
+.eliminar{
+    color: #4d164d;
+    background-color: #ffffff;
+    border-radius: 14px;
+    font-size: 16px;
+    padding: 10px 16px;
+    border:0px;
+    margin: 7% 31% 0%;
+    font-family: 'Lato', sans-serif;
+    width: 150px;
+    height: 25px;
+    line-height: 5px;
+    font-weight: bolder;
+}
+.contenedor3{
+    width: 47%;
+    border:4px;
+    padding: 10px 5px;
+    margin: 5px
+}
+
+  /* final footer */
+footer {
+    margin: 0px 0px  2px;
+    color: #4d164d;
+    font-size: 20px;
+    padding: 7px ;
+    background: #ffde59;
+    font-weight: bolder;
+}   
+.columnas {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    padding-bottom: 5px;
+}
+
+header h1{
+    color: white;
+}

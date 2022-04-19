@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* cabecera */
+header {
+  height: 20%;
+  border-bottom: 1px solid #000000;
+}
+header img {
+  height: 80px;
+  margin-bottom: -4px;
+  border-color: black;
+}
+
+
+/* cuerpo */
+.fondo {
+  background-image: url(https://cdn.pixabay.com/photo/2017/08/09/09/50/shopping-2613984_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0px 0px 0px 0px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  border-bottom: 2px solid black;
+}
+
+
+.form-register {
+  width: 500px;
+  background: #ccc;
+  padding: 30px;
+  margin: auto;
+  border-radius: 4px;
+  font-family: sans-serif;
+  color: white;
+  box-shadow: 7px 13px 37px #ffde59;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 49%;
+  background: #ffde59;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  margin-top: 10px;
+  
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+  margin: 10% 31% 0%;
+  font-family: 'Lato', sans-serif;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+nav ul li{
+  display: inline;
+  margin: 30px;
+  
+}
+nav{
+  background-color:#ffde59;
+  text-align: right;
+}
+a{
+  text-decoration: none;
+  color:#000000;
+  font-family:'Lato', sans-serif ;
+  font-size: 15px;
+  
+}
+
+.form-register .botons {
+  color: #fff;
+  background: #4d164d;
+  padding: 10px;
+  border-radius: 100px;
+  font-size: 15px;
+  margin-left: 100px;
+  margin-top: 10px;
+  width: 50%;
+  border: none;
+}
+#empleado {
+  float: right;
+}
+/* final footer */
+footer {
+  font-size: 18px;
+  padding: 20px;
+  padding-left: 0%;
+  background: #ffde59;
+}
+.columnas {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  padding-bottom: 5%;
+}
+header h1{
+  color: white;
+}

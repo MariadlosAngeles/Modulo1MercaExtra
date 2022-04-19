@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">        
+    <title> Gestion Usuario </title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/images/loguito.png">
+    <link rel="stylesheet" href="static/css/formulario.css">
+  </head>
+  <body> 
+    <header>
+        <img src="/static/images/logo.png" alt="" />
+    </header>
+    <hr>
+    <nav>
+        <ul>
+          <button class="buttonNav"><a href="/login2">INICIO</a></button>
+          <button class="buttonNav"><a href="/perfil">PERFIL</a></button>
+          <button class="buttonNav"><a href="/">SALIR</a></button>
+          <button class="buttonNav"><a href="/consultar">CONSULTAR USUARIO</a></button>
+        </ul>
+    </nav>
+    <div class="fondo">
+    <section>
+      <div class="perfil">
+        <form id="loginform" action='/valida_usuarios' method='POST'>
+              {% if usuario!=undefined %}
+                <input type="text" id="documento" name="documento"  value="{{ usuario.documento }}"   placeholder="Documento" required>
+                {% else %}
+                <input type="text" id="documento" name="documento"   placeholder="Documento" required>
+              {% endif %}       
+              <button class="buttonBuscar" type="submit" title="Buscar" name="buscar" >Buscar</button>
+              <br>
+              {% if usuario!=undefined %}
+              <input type="text"  id="nombre" name="nombre"  value="{{ usuario.nombre }}"  placeholder="Nombre" >
+              {% else %}
+              <input type="text"  id="nombre" name="nombre"  placeholder="Nombre" >
+              {% endif %}   
+              {% if usuario!=undefined %}
+              <input type="text"  id="apellido" name="apellido"  value="{{ usuario.apellido }}"  placeholder="Apellido" >
+              {% else %}
+              <input type="text"  id="apellido" name="apellido"  placeholder="apellido" >
+              {% endif %}   
+              {% if usuario!=undefined %}
+              <input type="text"  id="telefono" name="telefono"  value="{{ usuario.telefono }}"  placeholder="Telefono" >
+              {% else %}
+              <input type="text"  id="telefono" name="telefono" placeholder="Telefono" >
+              {% endif %}  
+              {% if usuario!=undefined %}
+              <input type="text"  id="email" name="email"  value="{{ usuario.email }}"  placeholder="Email" >
+              {% else %}
+              <input type="email" name="email" placeholder="Email" >
+              {% endif %}                                  
+            
+              {% if usuario!=undefined %}
+              <input type="password"  id="password" name="password"  value="{{ usuario.password }}"  placeholder="Password" >
+              {% else %}
+              <input type="password" name="password" placeholder="password" >
+              {% endif %}                                  
+              <button  type="submit" title="Registrar" name="registrar" >Registrar</button>
+              <button  type="submit" title="Actualizar" name="actualizar">Actualizar</button>
+              <button  type="submit" title="Eliminar" name="eliminar">Eliminar</button>
+                {% if usuario!=undefined %}
+                  {% if usuario.tipo==1 %} 
+                    <select class="tipos" name="tipo">
+                      <option value=1 selected>Administrador</option>
+                      <option value=2>Usuario</option>
+                    </select>
+                  {%else%}
+                    <select class="tipos" name="tipo">
+                      <option value=1>Administrador</option>
+                      <option value=2 selected>Usuario</option>
+                    </select>
+                  {% endif%} 
+                {% else %}
+                <select class="tipos" name="tipo">
+                  <option value=1>Administrador</option>
+                  <option value=2 selected>Usuario</option>
+                </select>
+                {% endif %}  
+              {% if usuario!=undefined %}
+              <label style="color: aliceblue;">{{ usuario.resultado }}</label>
+              {% endif %}  
+        </form>
+      </div>
+    </section>
+    </div>
+    <footer>
+      <div class="columnas">
+        <p>
+          Contactenos <br><br>
+          <img class="iconos2" src="/static/images/telefono.png">&nbsp;&nbsp;3227152395<br><img class="iconos3" src="/static/images/email.png">&nbsp;&nbsp;MercaExtra@gmail.com
+        </p>
+        <p>
+          Metodos de Pago<br><br>
+          <img src="/static/images/Usuario.png">&nbsp;<img class="icono" src="/static/images/paypal.png">
+        </p>
+        </p>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/registro_login.css" />
+    <title>Registro</title>
+  </head>
+  <body>
+    <header>
+      <img src="/static/Images/logo.png">
+  </header>
+  <hr>
+  <div class="textMenu">
+  <nav>
+    <ul>
+      <button class="buttonNav"><a href="/inicio">INICIO</a></button>
+      <button class="buttonNav"><a href="/ayudaUsuario">AYUDA</a></button>
+    </ul>
+  </nav> 
+  </div>
+  <div class="fondo">
+  <section class="login">
+    <h1>REGISTRARSE</h1>
+        <h3>¡Te brindaremos una gran atención!</h3>
+        <h3>Date cuenta de lo que hay</h3>
+        <div class="vertical-line"></div>
+
+            
+            <form  action="/registrar_persona" method="POST">
+              <input class="contenedor1" type="text" id="nombre" name="nombre" placeholder="Nombre(s)" required>
+              <input class="contenedor1" type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+              <input class="contenedor1" type="text" id="telefono" name="telefono" placeholder="Telefono" required>
+              <input class="contenedor1" type="number" id="documento" name="documento" placeholder="Documento" required>
+              <input class="contenedor1" type="email" id="email" name="email" placeholder="Email" required>
+              <input class="contenedor1" type="password" id="password" name="password" placeholder="Passoword" required>
+              <select class="buttonTipo"name="tipo">
+                <option value=1>Administrador</option>
+                <option value=2 selected>Usuario</option>
+              </select>
+              <input type="radio" name="radio" id="acepto">
+              <label for="internet">Terminos y condiciones</label>
+              <button  type="submit" title="inicio" name="inicio">Crear cuenta</button>
+            </form>
+            <br>
+            <a class="buttonLogin" href="/ya_tienes_cuenta">¿Ya tienes cuenta?</a>
+            <br><br>
+            <div class="mensaje">
+              {% if data!=undefined %}
+                <label>{{ data.resultado }}</label>
+              {%endif%}
+            </div>
+  </section>
+</div>
+  <footer>
+    <div class="columnas">
+      <p>
+        Contactenos <br><br>
+        <img class="iconos2" src="/static/images/telefono.png">&nbsp;&nbsp;3227152395<br><img class="iconos3" src="/static/images/email.png">&nbsp;&nbsp;MercaExtra@gmail.com
+      </p>
+      <p>
+        Metodos de Pago<br><br>
+        <img src="/static/images/Usuario.png">&nbsp;<img class="icono" src="/static/images/paypal.png">
+      </p>
+    </div>
+  </footer>
+  </body>
+</html>
